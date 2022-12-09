@@ -11,6 +11,28 @@ html{
     width: 100%;
 }
 
+.maindiv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #000;
+    padding-bottom: 1rem;
+    font-size: 20px!important;
+    color: white;
+}
+
+.tabelakalibrow{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color:white;
+}
+
 .login-form-container{
     width: 100%;
     color: #fff;
