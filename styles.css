@@ -19,6 +19,7 @@ html{
     padding-bottom: 1rem;
     font-size: 20px!important;
     color: white;
+    align-content: center;
 }
 
 .tabelakalibrow{
@@ -31,6 +32,8 @@ html{
     justify-content: space-between;
     margin-bottom: 20px;
     color:white;
+    border-color: white !important;
+    border-width: 2px;
 }
 
 .login-form-container{
@@ -91,7 +94,7 @@ html{
 body {
     background: #000;
     font-family: Arial;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     margin: 0px;
 }
 
@@ -217,4 +220,5 @@ footer {
     height: auto;
     color:white;
     background-color: grey;
+    height: 5rem;
   }

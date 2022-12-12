@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<meta charset="UTF-8">
+
 <head>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,6 +27,10 @@
                 </th>
                 <th>
                     <button class="linkbutn" onclick="window.location.href='aktualnosci.html';">Aktualnosci</span>
+                </th>
+                <th>
+                    <button class="linkbutn" onclick="window.location.href='tabelakalibrow.html';">Tabela kalibrów</span>
+                </th>
                 <th>
                     <button class="linkbutn" onclick="window.location.href='login.html';">Logowanie</span>
                 </th>
@@ -32,22 +39,24 @@
         </table>
     </div>
 
+
     <div class="login-title">
         <span class="login-title">Logowanie do serwisu</span><br>
     </div>
 
-    <form action="login">
-        <div class="login-form-container">
-
-            <label for="username">Nazwa użytkownika</label>
-            <input type="text" name="username" id="username">
-            <label for="password">Hasło</label>
-            <input type="password" name="password" id="password">
-            <input type="submit" value="Login">
-        </div>
-    </form>
-
+<!-- Login form HTML code -->
+<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" name="username" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" class="form-control" required>
+    </div>
+    <input type="submit" name="login" class="btn btn-primary" value="Login">
+  </form>
 
     <footer>
-        <div style="width: 30%;"> DANE ADRESOWE</div> <div style="width: 30%;"> DANE SE INNE</div> <div style="width: 30%;">dane se trzecie</div>
+        <div style="width: 30%;">Łódź, Polna 35, 92-213</div> <div style="width: 30%;">+48 883 131 779</div> <div style="width: 30%;">WikiBroniBareHTML &#169 Wszelkie prawa zastrzerzone</div>
     </footer>
