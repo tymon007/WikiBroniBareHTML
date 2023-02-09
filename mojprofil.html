@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="pl">
-<meta charset="UTF-8">
-
 <head>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Mój profil</title>
 </head>
 <body>
-<div class="titlediv">
-        <span class="title">Baza danych broni</span>
-</div>
+<header class="titlediv">
+        <h1>Edycja Profilu</h1>
+</header>
+    <nav class="navbar">
+        <table class="tabnavbar">
+            <tr>  
+                <th>                    
+                    <a class="linkbutn" href="index.html">Strona Główna</a>
+                </th>              
+                <th>
+                    <a class="linkbutn" href="onas.html">O nas</a>
+                </th>
+                <th>
+                    <a class="linkbutn" href="kontakt.html">Kontakt</a>
+                </th>
+                <th>
+                    <a class="linkbutn" href="zrodla.html">Źródła</a>
+                </th>
+                <th>
+                    <a class="linkbutn" href="aktualnosci.html">Aktualnosci</a>
+                </th>
+                <th>
+                    <a class="linkbutn" href="tabelakalibrow.html">Tabela kalibrów</a>
+                </th>
+                <th>
+                    <a class="linkbutn" href="login.html">Logowanie</a>
+                </th>
+                <th>
+                    <a class="linkbutn" href="mojprofil.html">Edytuj profil</a>
+                </th>
+            </tr>        
 
-</div>
-<nav>
-<div class="navbar">
-    <table class="tabnavbar">
-        <tr>  
-            <th>                    
-                <a class="linkbutn" href="index.html">Strona Główna</a>
-            </th>              
-            <th>
-                <a class="linkbutn" href="onas.html">O nas</a>
-            </th>
-            <th>
-                <a class="linkbutn" href="kontakt.html">Kontakt</a>
-            </th>
-            <th>
-                <a class="linkbutn" href="zrodla.html">Źródła</a>
-            </th>
-            <th>
-                <a class="linkbutn" href="aktualnosci.html">Aktualnosci</a>
-            </th>
-            <th>
-                <a class="linkbutn" href="tabelakalibrow.html">Tabela kalibrów</a>
-            </th>
-            <th>
-                <a class="linkbutn" href="login.html">Logowanie</a>
-            </th>
-        </tr>        
-
-    </table>
-</div>
-</nav>
+        </table>
+    </nav>
     
-    <footer>
-        <div style="width: 30%;">Łódź, Polna 35, 92-213</div> <div style="width: 30%;">+48 883 131 779</div> <div style="width: 30%;">WikiBroniBareHTML &#169 Wszelkie prawa zastrzerzone</div>
-    </footer>
-    </html>
+<form>
+    <div class="maindiv">
+        <div class="formdiv">
+            <div class="formdiv2">
+                <div class="formdiv3">
+                    <label for="fname">Imię:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Imię">
+                </div>
+                <div class="formdiv3">
+                    <label for="lname">Nazwisko:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Nazwisko">
+                </div>
+                <div class="formdiv3">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="formdiv3">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" name="password" placeholder="Hasło">
+                </div>
+                <div class="formdiv3">
+                    <label for="password2">Powtórz hasło:</label>
+                    <input type="password" id="password2" name="password2" placeholder="Powtórz hasło">
+                </div>
+                <div class="formdiv3">
+                    <label for="Telefon">Telefon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Telefon">
+                </div>
+                <div class="formdiv3">
+                    <label for="country">Kraj:</label>
+                    <select id="country" name="country">
+                        <option value="Polska">Polska</option>
+                        <option value="Niemcy">Niemcy</option>
+                        <option value="Czechy">Czechy</option>
+                        <option value="Słowacja">Słowacja</option>
+                        <option value="Węgry">Węgry</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Szwajcaria">Szwajcaria</option>
+                        <option value="Szwecja">Szwecja</option>
+                        <option value="Norwegia">Norwegia</option>
+                        <option value="Finlandia">Finlandia</option>
+                        <option value="Dania">Dania</option>
+                        <option value="Belgia">Belgia</option>
+                        <option value="Holandia">Holandia</option>
+                        <option value="Francja">Francja</option>
+                        </select>
+                </div>
+                <div class="formdiv3">
+                    <label for="Bio">Bio</label>
+                    <input type="text" id="Bio-desc" name="bio-desc"  placeholder="Bio" required class="bio-desc-box">
+                </div>
+                <div class="formdiv3">
+                    <label for="profile-image">Zdjęcie profilowe</label>
+                    <input type="file" id="profile-image" name="profile-image">
+                </div>
+                <div class="formdiv3">
+                    <button type="submit" class="button">Zapisz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<footer class="footer">
+    <div class="footer-text">Łódź, Polna 35, 92-213</div> 
+    <div class="footer-text">+48 883 131 779</div> 
+    <div class="footer-text">WikiBroniBareHTML Wszelkie prawa zastrzerzone</div>
+</footer>
+</html>

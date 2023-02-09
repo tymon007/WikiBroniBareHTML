@@ -9,5 +9,12 @@ Changelog after 08.02.2023
 7. Added thead and tbody tags to the table, as they are the most recent tags added in HTML5.
 8. Div of the title "Baza danych broni" changed to header with h1 tag, as it is the most important title on the page, and using div instead of header is obsolete in HTML5.
 9. Added HTML lang attribute, as it is considered to be a good practice for site accessibility.
-10. Added articles to "Aktualności" page along with classes to them, in order to format them.
+10. Added articles to "Aktualności" page along with classes to them, in order to format them. The articles were put into a section tag.
 11. Added figure captions using figcaption tags to the images on the "Aktualności" page.
+12. Added submit button to the form on the "Kontakt" page.
+13. Refurbished the "Login" page, so it looks more like a login page.
+14. Deleted all style properties of footer texts, and created classes for them to format, as using inline styles is considered to be a bad practice.
+15. Added h2 attribures to most important titles on index.
+16. Added new navlink to "mój profil" page.
+17. Added edytuj profil page.
+18. Added new form to "edytuj profil" page in order to add the ability to change: Name, Surname, Email, Password, Phone number, Country, Profile picture, Bio.
