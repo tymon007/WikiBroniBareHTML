@@ -1,0 +1,13 @@
+Changelog after 08.02.2023
+
+1. All "img" tags put into "figure" tags, as figures are the most recent tags added in HTML5.
+2. All navbar button onclick properties changed to anchors with href, as this is considered to be an up to date solution.
+3. nav tag added to the navbar, as it is the most recent tag added in HTML5. Deleted the div, that was used to wrap the navbar.
+4. Added outline to the buttons in the navbar, as it is considered to be a good practice, and make them look more like buttons.
+5. Changed the color of the navbar buttons to black, so they don't look like links.
+6. Added a total of 10px padding to the navbar buttons, so they look more clear.
+7. Added thead and tbody tags to the table, as they are the most recent tags added in HTML5.
+8. Div of the title "Baza danych broni" changed to header with h1 tag, as it is the most important title on the page, and using div instead of header is obsolete in HTML5.
+9. Added HTML lang attribute, as it is considered to be a good practice for site accessibility.
+10. Added articles to "Aktualności" page along with classes to them, in order to format them.
+11. Added figure captions using figcaption tags to the images on the "Aktualności" page.

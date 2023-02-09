@@ -1,0 +1,3 @@
+Error where w3.org code validator returned error "500 Can't connect to www.manticore.uni.lodz.pl:443 (certificate verify failed)" resolved. 
+Reason: manticore server certificate was improperly configured for subsites of students.
+Solution: use link without "https://" prefix.
