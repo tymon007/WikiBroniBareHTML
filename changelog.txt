@@ -21,3 +21,5 @@ Changelog after 08.02.2023
 19. Navbar table deleted, and navbar formatted with class of nav attribute.
 20. Table at tablelakalibrów.html refurbished to be spaced and have a border.
 21. Formatted articles, so the photos are smaller, and each article had its border.
+22. Links at "Źródła" repaired. Instead of spans, they are now anchors with href.
+23. Fixed imput errors reported by W3C validator at login page.
