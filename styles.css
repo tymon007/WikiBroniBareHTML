@@ -22,17 +22,14 @@ html{
     align-content: center;
 }
 
-.tabelakalibrow{
+.tabkalibrow, .tabkalibrow th, .tabkalibrow td{
     width: 100%;
     margin: 0 auto;
     padding: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
     color:white;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .login-form-container{
@@ -119,6 +116,9 @@ body {
     height:auto;
     text-align: center;
     background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .titlediv{
@@ -226,13 +226,20 @@ footer {
     height: 8rem;
   }
 
-.zdjecieArtykol{
-    width: 200px;
-    height: 100px;
+.article{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #000;
+    padding-bottom: 1rem;
+    font-size: 20px!important;
+    color: #fff;
+    border: 1px solid white;
+    
 }
 
-.article-photo{
-    width: auto;
+.article-photo img{
+    width: 300px;
     height: auto;
 }
 

@@ -18,3 +18,6 @@ Changelog after 08.02.2023
 16. Added new navlink to "mój profil" page.
 17. Added edytuj profil page.
 18. Added new form to "edytuj profil" page in order to add the ability to change: Name, Surname, Email, Password, Phone number, Country, Profile picture, Bio.
+19. Navbar table deleted, and navbar formatted with class of nav attribute.
+20. Table at tablelakalibrów.html refurbished to be spaced and have a border.
+21. Formatted articles, so the photos are smaller, and each article had its border.
