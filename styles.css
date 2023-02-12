@@ -238,6 +238,12 @@ footer {
     
 }
 
+.iframe-map{
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
 .article-photo img{
     width: 300px;
     height: auto;

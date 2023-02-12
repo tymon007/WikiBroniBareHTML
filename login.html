@@ -25,18 +25,41 @@
         <span class="login-title">Logowanie do serwisu</span><br>
     </div>
 
-<!-- Login form HTML code -->
-<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
-    <div class="form-group">
-      <label for="Username">Username</label>
-      <input id="Username" type="text" name="username" class="form-control" required>
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input id="password" type="password" name="password" class="form-control" required>
-    </div>
-    <input type="submit" name="login" class="submit-contact-form" value="Login">
-  </form>
+    <form method="post" action=".">
+        <div class="form-group">
+          <label for="Username">Username</label>
+          <input id="Username" type="text" name="username" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" class="form-control" required>
+        </div>
+        <input type="submit" name="login" class="submit-contact-form" value="Login">
+      </form>
+    
+    <?php
+    session_start();
+    
+    $users = [
+        'admin' => 'admin123',
+        'user1' => 'password1',
+        'user2' => 'password2'
+    ];
+    
+    if (isset($_POST['login'])) {
+      $username = $_POST['username'];
+      $password = $_POST['password'];
+    
+      if (isset($users[$username]) && $users[$username] == $password) {
+        // If the user exists, store their information in the session and redirect to the index page
+        $_SESSION['username'] = $username;
+        header('location: index.html');
+      } else {
+        header('location: loginfail.html');
+      }
+    }
+    
+    ?>
 
   <footer class="footer">
     <div class="footer-text">Łódź, Polna 35, 92-213</div> 
