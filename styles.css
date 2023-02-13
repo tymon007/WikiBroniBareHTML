@@ -12,7 +12,7 @@ html{
 }
 
 .maindiv{
-    width: 100%;
+    max-width: 1600px;
     height: auto;
     text-align: center;
     background-color: #000;
@@ -20,6 +20,23 @@ html{
     font-size: 20px!important;
     color: white;
     align-content: center;
+    align-items: center;
+    margin: 0   auto;
+}
+
+.abtn{
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: white;
+    border : 1px solid white;
+    padding: 10px;
+}
+
+.backend-h1{
+    display: flex;
+    text-align: center;
+    width: 100%;
 }
 
 .tabkalibrow, .tabkalibrow th, .tabkalibrow td{
@@ -28,6 +45,7 @@ html{
     padding: 30px;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-top: 30px;
     color:white;
     border: 1px solid white;
 }
@@ -87,11 +105,19 @@ html{
     box-sizing: border-box;
 }
 
-body {
+
+nav{
+    width: 100%!important;
+}
+
+body{
     background: #000;
     font-family: Arial;
     padding-bottom: 0px;
     margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
@@ -139,7 +165,12 @@ body {
     color: #000;
     padding-right: 5px;
     padding-left: 5px;
+    text-decoration: none;
 }
+
+.linkbutn:hover {
+    background-color: yellow;
+    }
 
 .menu { grid-area: menu; }
 .header { grid-area: header;
@@ -218,12 +249,11 @@ font-size: 3rem; }
 
 
 footer {
-    margin-top: 100px;
-    bottom: 0;
     width: 100%;
     color:white;
     background-color: grey;
     height: 8rem;
+    margin-top: auto;
   }
 
 .article{
@@ -249,8 +279,20 @@ footer {
     height: auto;
 }
 
-.submit-contact-form{
+.submit-contact-form-div{
     width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion{
+    max-width: 1000px!important
+}
+
+.submit-contact-form{
+    width: 30%;
     padding: 10px;
     margin-bottom: 10px;
     background-color: #000;
@@ -269,7 +311,7 @@ footer {
 .footer-text{
     text-align: left;
     width: 100%;
-    padding: 10px;
+    padding: 7px;
     margin-bottom: 10px;
     color: #fff;
 }
